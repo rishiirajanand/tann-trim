@@ -1,9 +1,11 @@
 import ProductCard from "@/components/ProductCard";
 import Sidebar from "@/components/Sidebar";
+import dotenv from "dotenv";
+dotenv.config();
 
 async function fetchProducts() {
   try {
-    const response = await fetch("https://fakestoreapi.com/products", {
+    const response = await fetch(`${process.env.API_URL}products`, {
       cache: "no-store",
     });
 
