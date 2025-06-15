@@ -1,4 +1,4 @@
-# 🛍️ Product Listing Page (Next.js + Netlify)
+# 🛍️ TANN TRIM (Next.js + Netlify)
 
 This project is a dynamic product listing page built using the **Next.js** framework. It consumes the [Fake Store API](https://fakestoreapi.com/products) using **Axios**, implements **Redux** for state management (Add to Cart / Remove from Cart), and is fully responsive based on a Figma design. The application is hosted on **Netlify** and auto-updates on code push via GitHub.
 
@@ -124,5 +124,5 @@ App will be available at: [http://localhost:3000](http://localhost:3000)
 
 Feel free to reach out for any feedback, suggestions, or collaborations:
 
-**RIshi Raj Anand**  
+**Rishi Raj Anand**  
 📧 Email: [rishirajanand5@gmail.com](rishirajanand5@gmail.com)
