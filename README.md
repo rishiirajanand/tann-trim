@@ -2,16 +2,11 @@
 
 This project is a dynamic product listing page built using the **Next.js** framework. It consumes the [Fake Store API](https://fakestoreapi.com/products) using **Axios**, implements **Redux** for state management (Add to Cart / Remove from Cart), and is fully responsive based on a Figma design. The application is hosted on **Netlify** and auto-updates on code push via GitHub.
 
-## 🔗 Live Demo
-
-👉 [View the deployed site on Netlify](https://your-netlify-deployment-url.netlify.app)
-
 ---
 
-## 🎨 Figma Design
+## 🔗 Live Demo
 
-Design was implemented based on this Figma file:  
-📐 [Figma UI Reference](https://www.figma.com/file/uWsNcQ6k60xf0yu34vH1pb/TT-PLP?node-id=0%3A1)
+👉 [View the deployed site on Netlify](https://willowy-parfait-4e0a5a.netlify.app)
 
 ---
 
@@ -46,31 +41,88 @@ Design was implemented based on this Figma file:
 
 src/
 ├── app/
-│ ├── accessories/
-│ │ └── page.jsx
-│ ├── bag/
-│ │ └── page.jsx
-│ ├── cart/
-│ │ └── page.jsx
-│ ├── gifting/
-│ │ └── page.jsx
-│ ├── jewelery/
-│ │ └── page.jsx
-│ ├── travel/
-│ │ └── page.jsx
-│ ├── globals.css
-│ ├── layout.jsx
-│ └── page.jsx
+│   ├── accessories/
+│   │   └── page.jsx
+│   ├── bag/
+│   │   └── page.jsx
+│   ├── cart/
+│   │   └── page.jsx
+│   ├── gifting/
+│   │   └── page.jsx
+│   ├── jewelery/
+│   │   └── page.jsx
+│   ├── travel/
+│   │   └── page.jsx
+│   ├── globals.css
+│   ├── layout.jsx
+│   └── page.jsx
 ├── components/
-│ ├── Header.jsx
-│ ├── Navbar.jsx
-│ ├── ProductCard.jsx
-│ └── Sidebar.jsx
+│   ├── Header.jsx
+│   ├── Navbar.jsx
+│   ├── ProductCard.jsx
+│   └── Sidebar.jsx
 ├── slice/
-│ └── productSlice.js
+│   └── productSlice.js
 ├── utils/
-│ ├── ProviderWrapper.jsx
-│ └── sidebarList.js
+│   ├── ProviderWrapper.jsx
+│   └── sidebarList.js
 ├── store.js
-└── .env ...
+└── .env
 ```
+
+---
+
+## ⚙️ Project Setup & Run Instructions
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/rishiirajanand/tann-trim.git
+cd your-repo-name
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Setup environment variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+NEXT_PUBLIC_API_BASE_URL=https://fakestoreapi.com/products
+```
+
+### 4️⃣ Run the project locally
+
+```bash
+npm run dev
+```
+
+App will be available at: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🌐 Deployment on Netlify
+
+1. **Connect your GitHub repo to Netlify**
+2. **Build Settings:**
+
+   - **Build command:** `npm run build`
+   - **Publish directory:** `.next`
+
+3. **Environment variables:**  
+   Add the same `NEXT_PUBLIC_API_BASE_URL` in Netlify's environment settings.
+
+4. **Deploy!** Netlify will handle continuous deployment on every `git push`.
+
+---
+
+## 📬 Contact
+
+Feel free to reach out for any feedback, suggestions, or collaborations:
+
+**RIshi Raj Anand**  
+📧 Email: [rishirajanand5@gmail.com](rishirajanand5@gmail.com)
