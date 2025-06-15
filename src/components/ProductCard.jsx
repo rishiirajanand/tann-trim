@@ -1,8 +1,19 @@
+"use client";
+
 import Image from "next/image";
 import saveIcon from "../../public/plus-icon.svg";
 import bookmarkIcon from "../../public/Bookmark.svg";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/slice/productSlice";
 
 function ProductCard({ productList }) {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+    alert("Product is Added");
+  };
+
   return (
     <main className="flex flex-col justify-center mt-[3rem]">
       <div className="w-full flex justify-between p-4">
@@ -52,7 +63,10 @@ function ProductCard({ productList }) {
                     <span className="text-[#2FC14F] font-medium">50% Off</span>
                   </div>
                 </div>
-                <button className=" cursor-pointer">
+                <button
+                  onClick={() => handleAddToCart(product)}
+                  className=" cursor-pointer"
+                >
                   <Image
                     src={saveIcon}
                     alt="Add to cart"
